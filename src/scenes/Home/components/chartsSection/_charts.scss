@@ -1,0 +1,55 @@
+// colors
+
+$color-white: #fff;
+$color-title: #8492af;
+$color-btn: #ff3a76;
+$inner-header: #0e1a35;
+
+// font-weights
+
+$font-normal: 500;
+$font-bold: 700;
+
+.charts {
+	background-color: $color-white;
+	padding: 20px;
+	margin-bottom: 25px;
+	border: 1px solid rgba(132, 146, 175, 0.3);
+
+	&-header {
+		margin-bottom: 25px;
+
+		@media (min-width: 375px) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&-title {
+			font-size: 25px;
+			color: $color-title;
+			font-weight: $font-bold;
+
+			@media (max-width: 374px) {
+				margin-bottom: 10px;
+			}
+		}
+
+		&-btn {
+			background: none;
+			border-radius: 50%;
+			border: 1px solid rgba(132, 146, 175, 0.3);
+			cursor: pointer;
+			width: 30px;
+			height: 30px;
+			color: $color-title;
+			margin-left: 10px;
+			transition: 0.2s;
+
+			&:hover {
+				border: 1px solid $inner-header;
+				color: $inner-header;
+			}
+		}
+	}
+}

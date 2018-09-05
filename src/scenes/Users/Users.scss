@@ -1,0 +1,85 @@
+//colors
+$color-main: #0e1a35;
+$color-secondary: #8492af;
+$color-active: #5584ff;
+$color-white: #fff;
+$color-btn: #ff3a76;
+
+.users {
+	.section-header {
+		margin-bottom: 10px;
+	}
+
+	.table {
+		border: none;
+
+		td {
+			vertical-align: middle;
+		}
+
+		thead th {
+			border: none;
+			color: $color-secondary;
+		}
+
+		td,
+		th {
+			padding: 1rem 1.5rem;
+		}
+	}
+
+	.pagination {
+		justify-content: center;
+		margin-top: 25px;
+
+		&-controls {
+			background-color: transparent;
+			border: none;
+
+			.fa {
+				color: $color-active;
+			}
+		}
+
+		.page-item {
+			&.active {
+				.page-link {
+					background-color: $color-white;
+					color: $color-active;
+					border: 1px solid #dee2e6;
+				}
+			}
+
+			.page-link {
+				color: $color-main;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+.section {
+	&-header {
+		margin-bottom: 20px;
+
+		@media (min-width: 768px) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		&-title {
+			color: $color-main;
+			font-weight: 700;
+			font-size: 30px;
+
+			@media (max-width: 765px) {
+				margin-bottom: 10px;
+			}
+
+			span {
+				color: $color-secondary;
+			}
+		}
+	}
+}
